@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="off" onclick="update()">switch on the bulb</button>
+    <img src="data:image/jpeg;base64,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" alt="off bulb" id="bulb">
+   <script>
+    function update(){
+   document.getElementById('off').innerText='switch off the bulb';
+   document.getElementById('off').style.display='none';
+   document.getElementById('bulb').src='https://5.imimg.com/data5/WL/SG/MY-8835990/10w-gls-light-bulb.jpg';}
+   </script>
+    
+</body>
+</html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       min-height: 100vh;
+    }
+    form{
+        width: 250px;
+        align-items: center;
+        justify-content: center;
+    }
+    h2{
+       text-align: center;
+        font-size:29px;
+       color: rgb(192, 110, 16);
+       
+
+       
+   }
+   .formm{
+    border: 2px solid red;
+     border-radius: 25px ;
+     align-items: center;
+        justify-content: center;
+        padding: 6px;
+   }
+   .email{
+    margin: 10px 0px;
+   }
+   .email input{
+    background-color: rgb(68, 80, 88);
+    border-radius: 30px;
+    border: 5px solid white;
+    height: 40px;
+    margin-left: 7px;
+    width: 230px;
+   }
+   .email ::placeholder{
+    color:black;
+    font-size: 17px;
+    padding: 10px;
+     
+   }
+   .password{
+    margin: 10px 0px;
+   }
+   .password input{
+    background-color: rgb(68, 80, 88);
+    border-radius: 30px;
+    border: 5px solid white;
+    height: 40px;
+    margin-left: 7px;
+    width: 230px;
+   }
+   .password ::placeholder{
+    color:black;
+    font-size: 17px;
+    padding: 10px;
+     
+   }
+   span{
+    font-size:13px;
+    font-weight: bold;
+   }
+   input[type=text]
+   {
+    padding: 5px;
+   }
+   button{
+    background-color: rgb(68, 80, 88);
+    border-radius: 30px;
+    border: 5px solid white;
+    height: 40px;
+    margin-left: 7px;
+    width: 230px;
+    margin-top: 17px;
+
+   }
+   .check-remb{
+   
+    margin: -10px 0px 10px 10px;
+   }
+   a{
+    text-decoration: none;
+   }
+   
+
+
+</style>
+<body>
+    <div class="formm">
+    <form action="">
+        <h2>Login</h2>
+
+       <div class="email">
+        <input type="text" placeholder="E-mail Id ">
+         </div>
+         
+         <div class="password">
+        <input type="text" placeholder="Password">
+         </div>  
+
+         <div class="check-remb">
+            <label>
+                <input type="checkbox">
+                <span>Remember me</span>
+            </label>
+            <label>
+                <span style="margin-left: 22px;"><a href="">forget password?</a></span>
+            </label>
+         </div>
+         <button type="button">Login</button>
+
+    </form>
+</div>
+</body>
+</html>

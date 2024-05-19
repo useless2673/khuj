@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #box{
+    height:100px;
+    width:100px;
+    background-color: crimson;
+    border:2px solid crimson;
+    margin:90px;
+    }
+</style>
+<body>
+    <label id="obj">0</label>
+    <br>
+    <input type="range"  id="range"  value="0"min="1" max="360" onmousemove=update()>
+<div id="box"></div>
+<script>
+    labelobj=document.getElementById('obj');
+    rangeobj=document.getElementById('range');
+    boxobj=document.getElementById('box');
+    function update(){
+labelobj.innerHTML=rangeobj.value
+boxobj.style.transform=`rotate(${rangeobj.value}deg)`;
+    }
+</script>
+</body>
+</html>

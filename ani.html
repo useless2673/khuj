@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-image: linear-gradient(blue,white);
+        height:100%;
+        width:100%;
+    }
+    .red{
+        height:100px;
+        width:100px;
+        position:absolute;
+        border-radius:50%;
+        background-color: red;
+        color: rgb(185, 59, 59);
+        filter:blur(5px);
+        animation: harry1 5s  infinite alternate-reverse;
+    }
+    @keyframes harry1
+    {
+        from{
+            top:40px;
+            left:60px;
+        }
+        to{
+            top:440px;
+            left:60px;
+        }
+    }
+    .yellow{
+        height:100px;
+        width:100px;
+        position:absolute;
+        border-radius:50%;
+        background-color: yellow;
+        color: rgb(204, 204, 24);
+        filter:blur(5px);
+        animation: harry2 5s infinite alternate-reverse;
+    }
+    @keyframes harry2
+    {
+        from{
+            top:100px;
+            left:190px;
+        }
+        to{
+            top:440px;
+            left:190px;
+        }
+    }
+    .green{
+        height:100px;
+        width:100px;
+        position:absolute;
+        border-radius:50%;
+        background-color: green;
+        color: rgb(72, 223, 72);
+        filter:blur(5px);
+        animation: harry3 5s infinite alternate-reverse;
+    }
+    @keyframes harry3
+    {
+        from{
+            top:170px;
+            left:300px;
+        }
+        to{
+            top:440px;
+            left:300px;
+        }
+    }
+    .black{
+        height:100px;
+        width:100px;
+        position:absolute;
+        border-radius:50%;
+        background-color: black;
+        color: rgb(80, 70, 70);
+        filter:blur(5px);
+        animation: harry4 5s infinite alternate-reverse;
+    }
+    @keyframes harry4
+    {
+        from{
+            top:30px;
+            left:430px;
+        }
+        to{
+            top:440px;
+            left:430px;
+        }
+    }
+</style>
+<body>
+    <div class="red"></div>
+    <div class="yellow"></div>
+    <div class="green"></div>
+    <div class="black"></div>
+    
+    
+</body>
+</html>
